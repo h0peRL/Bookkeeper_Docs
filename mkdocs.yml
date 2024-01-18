@@ -1,1 +1,6 @@
 site_name: Bookkeeper
+theme:
+  name: material
+  features:
+    - header.autohide
+    - navigation.tabs
