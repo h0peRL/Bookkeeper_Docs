@@ -9,10 +9,10 @@
 | **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement**                                                                                |
 | :----------- | ---------------------- | :---------------------- | ---------------------------------------------------------------------------------------------- |
 | 1            | Mandatory              | Functional              | The app supports multiple users at the same time                                               |
-| **2**        | Mandatory              | Marginal                | The app is a .NET 8.0 REST-API (LTS)                                                           |
-| **3**        | Mandatory              | Functional              | Data will be stored in an SQL-Database                                                         |
-| **4**        | Mandatory              | Functional              | The user can register via HTTP-request                                                         |
-| **5**        | Mandatory              | Functional              | The user can log in via HTTP-request                                                           |
+| 2            | Mandatory              | Marginal                | The app is a .NET 8.0 REST-API (LTS)                                                           |
+| 3            | Mandatory              | Functional              | Data will be stored in an SQL-Database                                                         |
+| 4            | Mandatory              | Functional              | The user can register via HTTP-request                                                         |
+| 5            | Mandatory              | Functional              | The user can log in via HTTP-request                                                           |
 | 6            | Mandatory              | Functional              | The user can create booking records via HTTP-request                                           |
 | 7            | Mandatory              | Functional              | The software must have a balance sheet according to the SME chart of accounts                  |
 | 8            | Optional               | Functional              | The software must have an income statement based on the SME chart of accounts                  |
