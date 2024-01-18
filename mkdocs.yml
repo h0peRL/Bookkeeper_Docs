@@ -3,3 +3,4 @@ theme:
   name: material
   features:
     - header.autohide
+    - navigation.tabs
