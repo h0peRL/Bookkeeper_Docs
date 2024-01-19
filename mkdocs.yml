@@ -1,6 +1,10 @@
 site_name: Bookkeeper
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: lime
+    accent: deep purple
   features:
     - header.autohide
     - navigation.tabs
