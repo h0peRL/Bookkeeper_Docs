@@ -9,5 +9,6 @@ theme:
   features:
     - header.autohide
     - navigation.tabs
+    - navigation.footer
     - search.suggest
     - search.highlight
