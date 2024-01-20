@@ -1,6 +1,10 @@
 site_name: Bookkeeper
 repo_name: h0peRL/Bookkeeper_Docs
 repo_url: https://github.com/h0peRL/Bookkeeper_Docs
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 theme:
   name: material
   language: en
