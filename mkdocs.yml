@@ -1,6 +1,7 @@
 site_name: Bookkeeper
 theme:
   name: material
+  language: en
   palette:
     scheme: slate
     primary: lime
