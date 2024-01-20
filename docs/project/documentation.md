@@ -60,6 +60,20 @@
 | 23  | 29.02.2024 | Run tests and create protocol with a conclusion of the run                       | 1                        |
 | 24  | 29.02.2024 | Evaluate results of the project (as a group)                                     | 3                        |
 
+???+ info "Total Time Spent (estimate)"
+
+    Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
+
+    ```
+    team members: 3
+    total weeks: 7
+    lessons per week: 5
+    lessons per member: 7 * 5 = 35
+    total lessons: 35 * 3 = 105
+    ```
+
+    **The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
+
 ### Test Cases
 
 ## Decide
