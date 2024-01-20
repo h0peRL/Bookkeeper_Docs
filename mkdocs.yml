@@ -1,7 +1,11 @@
 site_name: Bookkeeper
+repo_name: h0peRL/Bookkeeper_Docs
+repo_url: https://github.com/h0peRL/Bookkeeper_Docs
 theme:
   name: material
   language: en
+  icon:
+    repo: fontawesome/brands/github
   palette:
     scheme: slate
     primary: lime
