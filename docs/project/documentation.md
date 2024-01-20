@@ -32,32 +32,32 @@
 ### Work Packages
 
 
-| Nr. | Due | Description                                                | Estimated Time (45 min.) |
-| --- | --- | ---------------------------------------------------------- | ------------------------ |
-|     |     | Set up documentation                                       | 3                        |
-|     |     | Set up project                                             | 3                        |
-|     |     | Set up repositories                                        | 2                        |
-|     |     | Define detailed requirements                               | 2                        |
-|     |     | Set up prod. DB                                            | 5                        |
-|     |     | Research Technologies                                      | 5                        |
-|     |     | Create detailed MVC class diagram in VP                    | 15                       |
-|     |     | Decide about technologies to use                           | 3                        |
-|     |     | Set up test DB                                             | 5                        |
-|     |     | Set up linter and styling rules                            | 2                        |
-|     |     | Set up CI pipelines                                        | 5                        |
-|     |     | Set up pre-commits                                         | 1                        |
-|     |     | Write test cases for every requirement (documentation)     | 5                        |
-|     |     | Write unittests from test cases (for model only!)          | 6                        |
-|     |     | Integrate EF as ORM with DB                                | 5                        |
-|     |     | Create class and method bodies from class diagram          | 2                        |
-|     |     | Implement registration endpoint                            | 2                        |
-|     |     | Implement login endpoint and authorization                 | 2                        |
-|     |     | Implement booking record (request) creation with a queue   | 2                        |
-|     |     | Implement balance sheet generation                         | 3                        |
-|     |     | Implement income statement generation                      | 3                        |
-|     |     | Implement pending record request processing                | 5                        |
-|     |     | Run tests and create protocol with a conclusion of the run | 1                        |
-|     |     | Evaluate results of the project (as a group)               | 3                        |
+| Nr. | Due | Description                                                                      | Estimated Time (45 min.) |
+| --- | --- | -------------------------------------------------------------------------------- | ------------------------ |
+| 1   |     | Set up documentation                                                             | 3                        |
+| 2   |     | Set up project                                                                   | 3                        |
+| 3   |     | Set up repositories                                                              | 2                        |
+| 4   |     | Define detailed requirements                                                     | 2                        |
+| 5   |     | Set up prod. DB                                                                  | 5                        |
+| 6   |     | Research Technologies                                                            | 5                        |
+| 7   |     | Create detailed MVC class diagram in VP                                          | 15                       |
+| 8   |     | Decide about technologies to use                                                 | 3                        |
+| 9   |     | Set up test DB                                                                   | 5                        |
+| 10  |     | Set up linter and styling rules                                                  | 2                        |
+| 11  |     | Set up CI pipelines                                                              | 5                        |
+| 12  |     | Set up pre-commits                                                               | 1                        |
+| 13  |     | Write test cases for every requirement with test env. definition (documentation) | 5                        |
+| 14  |     | Write unittests from test cases (for model only!)                                | 6                        |
+| 15  |     | Integrate EF as ORM with DB                                                      | 5                        |
+| 16  |     | Create class and method bodies from class diagram                                | 2                        |
+| 17  |     | Implement registration endpoint                                                  | 2                        |
+| 18  |     | Implement login endpoint and authorization                                       | 2                        |
+| 19  |     | Implement booking record (request) creation with a queue                         | 2                        |
+| 20  |     | Implement balance sheet generation                                               | 3                        |
+| 21  |     | Implement income statement generation                                            | 3                        |
+| 22  |     | Implement pending record request processing                                      | 5                        |
+| 23  |     | Run tests and create protocol with a conclusion of the run                       | 1                        |
+| 24  |     | Evaluate results of the project (as a group)                                     | 3                        |
 
 ### Test Cases
 
