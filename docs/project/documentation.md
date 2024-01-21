@@ -91,7 +91,9 @@ Initially, we thought that we could simply spin up a database with our student a
 
 After looking for an alternative host for Microsoft SQL Servers, one of our team members was kind enough and offered to host the database privately on his own server at home. So after setting things up and forwarding the port of the SQL server, the databse was ready for use.
 
-### Develpment Database Options
+### Development Database Options
+
+For development and testing purposes we decided to use a secondary database with fake data on it to be able to swiftly reproduce scenarios and different use cases without potentially breaking the main production database. That secondary database should consist of a docker container with a docker image that already has the fake test data in it. This way we can just reset everything when restarting that container if it has impersistent storage.
 
 ### Documentation Site
 
