@@ -79,6 +79,22 @@
 
 ## Decide
 
+### Database type and engine
+
+### Production Database Hosting
+
+### Develpment Database Options
+
+### Documentation Site
+
+### Linting and Linters
+
+### REST API Framework
+
+### Testing REST Endpoints
+
+### Handling SQL Transaction Errors
+
 ## Realise
 
 ## Control
