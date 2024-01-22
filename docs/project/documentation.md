@@ -1,6 +1,6 @@
 # Documentation
 
-## Inform
+## Research
 
 ### Sources
 
@@ -22,10 +22,10 @@
 | 11           | Optional               | Quality                 | Every command should have an explanation of the syntax                                         |
 | 12           | Mandatory              | Functional              | Every endpoint should require a JWT-Bearer-Token (except login and register)                   |
 | 13           | Mandatory              | Marginal                | There must be a UML class diagram.                                                             |
-| 14           | Mandatory              | Marginal                | The program and documentation should be in english                                             |
-| 15           | Mandatory              | Marginal                | There should be a glossary with german translations                                            |
+| 14           | Mandatory              | Marginal                | The program and documentation should be in English                                             |
+| 15           | Mandatory              | Marginal                | There should be a glossary with German translations                                            |
 
-### Technologies
+### Tech Stack
 
 ## Plan
 
@@ -83,8 +83,8 @@
 
 ## Control
 
-### Test protocol
+### Test Protocol
 
-### Test conclusion
+### Conclusion
 
 ## Evaluate
