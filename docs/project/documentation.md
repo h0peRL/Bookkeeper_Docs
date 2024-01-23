@@ -107,6 +107,8 @@ While skimming through the documentation of the new host, we found out that it a
 
 ### Linting and Linters
 
+When it comes to linting C#, dotnet has a default formatter that can also enforce some style rules and patterns. The range of options one can choose from is not very wide, however. To have more freedom in terms of details and choice, we decided to integrate [stylecop](https://marketplace.visualstudio.com/items?itemName=ChrisDahlberg.StyleCop), a static code analyzer for C#, into our project.
+
 ### REST API Framework
 
 ### Testing REST Endpoints
