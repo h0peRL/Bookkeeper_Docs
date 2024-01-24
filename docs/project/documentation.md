@@ -89,7 +89,7 @@ However, we decided to go with a relational database in the end, so that we can 
 
 Initially, we thought that we could simply spin up a database with our student accounts on [Microsoft Azure](https://azure.microsoft.com/en-us/), the pricing however, turned out to be very inconvenient. For our use case it was way too expensive and this option was out of question in no time after we found that out.
 
-After looking for an alternative host for Microsoft SQL Servers, one of our team members was kind enough and offered to host the database privately on his own server at home. So after setting things up and forwarding the port of the SQL server, the databse was ready for use.
+After looking for an alternative host for Microsoft SQL Servers, one of our team members was kind enough and offered to host the database privately on his own server at home. So after setting things up and forwarding the port of the SQL server, the database was ready for use.
 
 ### Development Database Options
 
@@ -117,7 +117,7 @@ Another reason for our choice was the compatibility and easy integration with th
 
 ### Testing REST Endpoints
 
-To test and develop the endpoints of the REST API we will be using a workspace on [Postman](https://www.postman.com/). It is a tool that supports automized testing of API endpoints with lots of utility. The reason we went with this option is that all of us worked with it several times before.
+To test and develop the endpoints of the REST API we will be using a workspace on [Postman](https://www.postman.com/). It is a tool that supports automated testing of API endpoints with lots of utility. The reason we went with this option is that all of us worked with it several times before.
 
 ### Handling SQL Transaction Errors
 
