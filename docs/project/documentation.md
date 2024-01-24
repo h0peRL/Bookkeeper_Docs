@@ -117,6 +117,8 @@ Another reason for our choice was the compatibility and easy integration with th
 
 ### Testing REST Endpoints
 
+To test and develop the endpoints of the REST API we will be using a workspace on [Postman](https://www.postman.com/). It is a tool that supports automized testing of API endpoints with lots of utility. The reason we went with this option is that all of us worked with it several times before.
+
 ### Handling SQL Transaction Errors
 
 ## Realise
