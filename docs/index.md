@@ -15,3 +15,7 @@ The Bookkeeper project is a multi-user application designed for bookkeeping and 
     cd Bookkeeper_API
 
     ```
+
+# Why Bookkeeper?
+
+This project was conceived and implemented during our education as Software Engineers in the IMS program at the BBBaden School. Currently in our 3rd Year, we aim to further enhance our skills, focusing on a specific module dedicated to Multi-User applications. This additional module will deepen our understanding for mudlti-user applications. The Bookkeeper project is a great opportunity to apply our knowledge and skills in a real-world scenario.
