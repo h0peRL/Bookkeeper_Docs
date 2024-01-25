@@ -111,7 +111,7 @@ When it comes to linting C#, dotnet has a default formatter that can also enforc
 
 ### REST API Framework
 
-So we won't have to create our entire REST API from scratch, we decided to use a framework that is part of the dotnet ecosystem. We will be using an [ASP.NET Core Web API](https://dotnet.microsoft.com/en-us/apps/aspnet/apis) te get things going.
+So we won't have to create our entire REST API from scratch, we decided to use a framework that is part of the dotnet ecosystem. We will be using an [ASP.NET Core Web API](https://dotnet.microsoft.com/en-us/apps/aspnet/apis) to get things going.
 
 Another reason for our choice was the compatibility and easy integration with the Entity Framework
 
