@@ -79,6 +79,55 @@
 
 ## Decide
 
+### Database Type and Engine
+
+At the very beginning of the project we were thinking about using a realtime NoSQL database such as [Firebase](https://firebase.google.com/docs/database) to avoid having to deal with failed transactions. That would have worked by attaching observers to certain nodes (JSON elements) in the database and subscribing them to update events.
+
+However, we decided to go with a relational database in the end, so that we can avoid redundancy. Our final decision on this subject came down to [Microsoft SQL Server 2022 Express](https://www.microsoft.com/de-de/download/details.aspx?id=104781). We chose that engine due to its range of feature and our experience with it.
+
+### Production Database Hosting
+
+Initially, we thought that we could simply spin up a database with our student accounts on [Microsoft Azure](https://azure.microsoft.com/en-us/), the pricing however, turned out to be very inconvenient. For our use case it was way too expensive and this option was out of question in no time after we found out about that.
+
+After looking for an alternative host for Microsoft SQL Servers, one of our team members was kind enough and offered to host the database privately on his own server at home. So after setting things up and forwarding the port of the SQL server, the database was ready for use.
+
+### Development Database Options
+
+For development and testing purposes we decided to use a secondary database with fake data on it to be able to swiftly reproduce scenarios and different use cases without potentially breaking the main production database. That secondary database should consist of a docker container with a docker image that already has the fake test data in it. This way we can just reset everything when restarting that container if it has impersistent storage.
+
+### Documentation Site
+
+In terms of hosting the documentation there were interesting discussions as well. They were mostly about whether we should stay with [Docusaurus](https://docusaurus.io/) (a technology we all know from previous projects) or if we should try out something new as an alternative. This is due to Docusaurus being a struggle to fully integrate and automate with GitHub-Pages.
+
+As a replacement we found several other tools. Most of them were sadly even less convenient or just overly complicated compared to docusaurus. One of the top candidates was [Sphinx](https://www.sphinx-doc.org/en/master/), but it uses a very odd syntax over the regular Markdown everyone in the team is used to.
+
+When looking for a potential host for it we found [Read the Docs](https://about.readthedocs.com/?ref=readthedocs.com). It can even fully automate previews and deployments from a GitHub repository by simply setting up a Webhook in it. This feature spared us the creation of a dedicated workflow and the debugging of it, which took a good while with Docusaurus originally. So this is the host we went with for the documentation, instead of GitHub-Pages.
+
+While skimming through the documentation of the new host, we found out that it also works with a Markdown based framework called [MkDocs](https://www.mkdocs.org/). After reading up a bit on MkDoc's customization possibilities we found the [Material Theme for MkDocs by Squidfunk](https://squidfunk.github.io/mkdocs-material/) to be suitable for our needs. It provides more or less the same features as Docusaurus, just without the complications we had. As so, our final decision regarding the documentation side of things was to use MkDocs with the Material Theme and host it on Read the Docs.
+
+### Linting and Linters
+
+When it comes to linting C#, dotnet has a default formatter that can also enforce some style rules and patterns. The range of options one can choose from is not very wide, however. To have more freedom in terms of details and choice, we decided to integrate [stylecop](https://marketplace.visualstudio.com/items?itemName=ChrisDahlberg.StyleCop), a static code analyzer for C#, into our project.
+
+### REST API Framework
+
+So we won't have to create our entire REST API from scratch, we decided to use a framework that is part of the dotnet ecosystem. We will be using an [ASP.NET Core Web API](https://dotnet.microsoft.com/en-us/apps/aspnet/apis) to get things going.
+
+Another reason for our choice was the compatibility and easy integration with the Entity Framework
+
+### Testing REST Endpoints
+
+To test and develop the endpoints of the REST API we will be using a workspace on [Postman](https://www.postman.com/). It is a tool that supports automated testing of API endpoints with lots of utility. The reason we went with this option is that all of us worked with it several times before.
+
+### Handling SQL Transaction Errors
+
+Considering the fact that our app will be booking digital money, we want rule out any possibility of anomalies that can alter the total amount of money in the system. Especially since our app allows multiple users to use it at the same time.
+
+We put these measures into place to handle conflicting transactions:
+
+- avoid common columns by calculating total with past records (no common writes)
+- queue record requests for compatibility check (warning/error can be raised)
+
 ## Realise
 
 ## Control
