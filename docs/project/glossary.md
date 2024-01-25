@@ -6,3 +6,5 @@
 | Balance sheet         | Bilanz           |
 | Income statement      | Erfolgsrechnung  |
 | Booking records       | Buchungssätze    |
+| Debit                 | Soll             |
+| Credit                | Haben            |
