@@ -121,7 +121,7 @@ To test and develop the endpoints of the REST API we will be using a workspace o
 
 ### Handling SQL Transaction Errors
 
-Considering the fact that our app will be booking digital money, we want rule out any possibility of anomalies that can alter the total amount of money in the system. Especially since the our app allows multiple users to use it at the same time.
+Considering the fact that our app will be booking digital money, we want rule out any possibility of anomalies that can alter the total amount of money in the system. Especially since our app allows multiple users to use it at the same time.
 
 We put these measures into place to handle conflicting transactions:
 
