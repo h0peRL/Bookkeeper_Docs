@@ -87,7 +87,7 @@ However, we decided to go with a relational database in the end, so that we can 
 
 ### Production Database Hosting
 
-Initially, we thought that we could simply spin up a database with our student accounts on [Microsoft Azure](https://azure.microsoft.com/en-us/), the pricing however, turned out to be very inconvenient. For our use case it was way too expensive and this option was out of question in no time after we found that out.
+Initially, we thought that we could simply spin up a database with our student accounts on [Microsoft Azure](https://azure.microsoft.com/en-us/), the pricing however, turned out to be very inconvenient. For our use case it was way too expensive and this option was out of question in no time after we found out about that.
 
 After looking for an alternative host for Microsoft SQL Servers, one of our team members was kind enough and offered to host the database privately on his own server at home. So after setting things up and forwarding the port of the SQL server, the database was ready for use.
 
