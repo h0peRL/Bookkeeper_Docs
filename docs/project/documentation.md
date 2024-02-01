@@ -75,17 +75,17 @@ total lessons: 35 * 3 = 105
 
 ### Test Cases
 
-| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen                                                            | Testumgebung     | Eingabe/Aktion                                                        | Erw. Ausgabe                     |
-| --------------- | ------------- | -------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------- | :------------------------------- |
-| 1.1             | 3             | Unittest for multifuctionality is crated.                                  | VS, .NET 8.0 LTS | Start the unittest which is used to test the multiuser functionality. | Unittest is succesfull.          |
-| 2.1             | 4             | Backend is up and running, correct API endpoint is used: .../auth/register | Postman, Swagger | name: youruname<br />password: yourpw                                 | HTTP 200 succesful. User created |
-| 3.1             | 5             | Backend is up and running, correct API endpoint is used: .../auth/login    | Postman, Swagger | name: youruname<br />password: yourpw                                 | HTTP 200 succesful. Logged in.   |
-|                 |               |                                                                            |                  |                                                                       |                                  |
-|                 |               |                                                                            |                  |                                                                       |                                  |
-|                 |               |                                                                            |                  |                                                                       |                                  |
-|                 |               |                                                                            |                  |                                                                       |                                  |
-|                 |               |                                                                            |                  |                                                                       |                                  |
-|                 |               |                                                                            |                  |                                                                       |                                  |
+| Testf.<br />Nr. | Anf.<br />Nr. | Voraussetzungen                                                            | Testumgebung     | Eingabe/Aktion                                                        | Erw. Ausgabe                               |
+| --------------- | ------------- | -------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------- | :----------------------------------------- |
+| 1.1             | 3             | Unittest for multifuctionality is crated.                                  | VS, .NET 8.0 LTS | Start the unittest which is used to test the multiuser functionality. | Unittest is succesfull.                    |
+| 2.1             | 4             | Backend is up and running, correct API endpoint is used: .../auth/register | Postman, Swagger | name: youruname<br />password: yourpw                                 | HTTP 200 succesful. User created           |
+| 3.1             | 5             | Backend is up and running, correct API endpoint is used: .../auth/login    | Postman, Swagger | name: youruname<br />password: yourpw                                 | HTTP 200 succesful. Logged in.             |
+| 4.1             | 6             | Backend is up and running, correct API endpoint is used.                   | Postman, Swagger | debit: 1000 credit: 1200 amount: 20                                   | HTTP 200 succesful. Bookingrecord created. |
+|                 |               |                                                                            |                  |                                                                       |                                            |
+|                 |               |                                                                            |                  |                                                                       |                                            |
+|                 |               |                                                                            |                  |                                                                       |                                            |
+|                 |               |                                                                            |                  |                                                                       |                                            |
+|                 |               |                                                                            |                  |                                                                       |                                            |
 
 ## Decide
 
