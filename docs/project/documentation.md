@@ -86,7 +86,7 @@ total lessons: 35 * 3 = 105
 | 7.1             | 9             | Starting the application                                                   | Postman, Swagger | debit: 1500 credit: 2000 amount: 20                                                           | "balancesheet" ->Machines= 20, VLL = 20                                                         |
 | 8.1             | 10            | Connect wit DB                                                             | SSMS             | SQL Query with SELECT\* FROM Account                                                          | The Table should have these data.![](assets/20240201_112710_image.png)                          |
 | 9.1             | 11            | Starting the application, endpoint .../commands                            | Postman, Swagger | command: help                                                                                 | An explanation of the syntax is also provided in the respective descriptions.                   |
-|                 |               |                                                                            |                  |                                                                                               |                                                                                                 |
+| 10.1            | 12            | Starting the application,                                                  | Postman          | Route to an endpoint without sending your JWT                                                 | Status Code 401: Unauthorized                                                                   |
 
 ## Decide
 
