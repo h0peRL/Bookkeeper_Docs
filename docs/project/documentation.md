@@ -61,17 +61,17 @@
 
 ???+ info "Total Time Spent (estimate)"
 
-Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
+    Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
 
-```
-team members: 3
-total weeks: 7
-lessons per week: 5
-lessons per member: 7 * 5 = 35
-total lessons: 35 * 3 = 105
-```
+    ```
+    team members: 3
+    total weeks: 7
+    lessons per week: 5
+    lessons per member: 7 * 5 = 35
+    total lessons: 35 * 3 = 105
+    ```
 
-**The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
+    **The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
 
 ### Test Cases
 
