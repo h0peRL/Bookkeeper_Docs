@@ -6,22 +6,22 @@
 
 ### Requirements
 
-| **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement**                                                                                |     |
-| :----------- | ---------------------- | :---------------------- | ---------------------------------------------------------------------------------------------- | --- |
-| 1            | Mandatory              | Functional              | The app supports multiple users at the same time                                               |     |
-| 2            | Mandatory              | Marginal                | The app is a .NET 8.0 REST-API (LTS)                                                           |     |
-| 3            | Mandatory              | Marginal                | Data will be stored in an SQL-Database                                                         |     |
-| 4            | Mandatory              | Functional              | The user can register via HTTP-request                                                         |     |
-| 5            | Mandatory              | Functional              | The user can log in via HTTP-request                                                           |     |
-| 6            | Mandatory              | Functional              | The user can create booking records via HTTP-request                                           |     |
-| 7            | Mandatory              | Functional              | The software must have a balance sheet according to the SME chart of accounts                  |     |
-| 8            | Optional               | Functional              | The software must have an income statement based on the SME chart of accounts                  |     |
-| 9            | Mandatory              | Functional              | The software must be able to execute booking records while updating the affected accounts      |     |
-| 10           | Mandatory              | Functional              | A booking record must include the date, booking text, debit account, credit account and amount |     |
-| 11           | Mandatory              | Functional              | Every endpoint should require a JWT-Bearer-Token (except login and register)                   |     |
-| 12           | Mandatory              | Marginal                | There must be a UML class diagram.                                                             |     |
-| 13           | Mandatory              | Marginal                | The program and documentation should be in English                                             |     |
-| 14           | Mandatory              | Marginal                | There should be a glossary with German translations                                            |     |
+| **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement**                                                                                |
+| :----------- | ---------------------- | :---------------------- | ---------------------------------------------------------------------------------------------- |
+| 1            | Mandatory              | Functional              | The app supports multiple users at the same time                                               |
+| 2            | Mandatory              | Marginal                | The app is a .NET 8.0 REST-API (LTS)                                                           |
+| 3            | Mandatory              | Marginal                | Data will be stored in an SQL-Database                                                         |
+| 4            | Mandatory              | Functional              | The user can register via HTTP-request                                                         |
+| 5            | Mandatory              | Functional              | The user can log in via HTTP-request                                                           |
+| 6            | Mandatory              | Functional              | The user can create booking records via HTTP-request                                           |
+| 7            | Mandatory              | Functional              | The software must have a balance sheet according to the SME chart of accounts                  |
+| 8            | Optional               | Functional              | The software must have an income statement based on the SME chart of accounts                  |
+| 9            | Mandatory              | Functional              | The software must be able to execute booking records while updating the affected accounts      |
+| 10           | Mandatory              | Functional              | A booking record must include the date, booking text, debit account, credit account and amount |
+| 11           | Mandatory              | Functional              | Every endpoint should require a JWT-Bearer-Token (except login and register)                   |
+| 12           | Mandatory              | Marginal                | There must be a UML class diagram.                                                             |
+| 13           | Mandatory              | Marginal                | The program and documentation should be in English                                             |
+| 14           | Mandatory              | Marginal                | There should be a glossary with German translations                                            |
 
 ### Tech Stack
 
@@ -60,17 +60,17 @@
 
 ???+ info "Total Time Spent (estimate)"
 
-Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
+    Here is the calculation of how many lessons the project should take to implement. Please note, that a single lesson equals 45 minutes
 
-```
-team members: 3
-total weeks: 7
-lessons per week: 5
-lessons per member: 7 * 5 = 35
-total lessons: 35 * 3 = 105
-```
+    ```
+    team members: 3
+    total weeks: 7
+    lessons per week: 5
+    lessons per member: 7 * 5 = 35
+    total lessons: 35 * 3 = 105
+    ```
 
-**The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
+    **The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
 
 ### Test Cases
 
@@ -93,30 +93,29 @@ total lessons: 35 * 3 = 105
 
 - Microsoft Visual Studio Enterprise (VS)
   - Microsoft Visual Studio Enterprise 2022
-  - Version: 17.5.5
-  - VisualStudio.17.Release/17.5.5+33627.172
-  - Microsoft .NET Framework: 4.8.04084
+  - Version: 17.9.1
+  - VisualStudio.17.Release/17.9.1+34616.47
+  - Microsoft .NET Framework: Version 4.8.09032
   - Installed Version: Enterprise
-  - C# Tools: 4.5.2-3.23171.7+d17f741546fad2786cbd6394d08619544e53a36d
+  - C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
   - Microsoft JVM Debugger: 1.0
-  - NuGet Package Manager: 6.5.0
-  - SQL Server Data Tools: 17.2.40120.0
-  - SQLite & SQL Server Compact Toolbox: 4.8
+  - NuGet Package Manager: 6.9.1
   - Visual Studio IntelliCode: 2.2
 - Visual Studio Code (VSC)
-  - Version: 1.78.2 (user setup)
-  - Commit: b3e4e68a0bc097f0ae7907b217c1119af9e03435
-  - Chromium: 108.0.5359.215
-  - Node.js: 16.17.1
-  - V8: 10.8.168.25-electron.0
-  - OS: Windows_NT x64 10.0.19045
+  - Version: 1.85.2 (user setup)
+  - Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
+  - Chromium: 114.0.5735.289
+  - Electron: 25.9.7
+  - ElectronBuildId: 26354273
+  - Node.js: 18.15.0
+  - V8: 11.4.183.29-electron.0
+  - OS: Windows_NT x64 10.0.22621
   - Sandboxed: Yes
 - Microsoft SQL Server Management Studio 18
   - Version: 18.11.1
 - Chrome (for PDFs und Documentation)
-  - Version: 114.0.5735.134 (Official Build) (64-bit)
-- Visual Paradigm
-  - Version: 17.0
+  - Version 122.0.6261.58 (Official Build) (64-bit)
+- Visual Paradigm - Version: 17.0
 
 ## Decide
 
