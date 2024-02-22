@@ -93,28 +93,28 @@
 
 * Microsoft Visual Studio Enterprise (VS)
     * Microsoft Visual Studio Enterprise 2022
-  - Version: 17.9.1
-  - VisualStudio.17.Release/17.9.1+34616.47
-  - Microsoft .NET Framework: Version 4.8.09032
-  - Installed Version: Enterprise
-  - C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
-  - Microsoft JVM Debugger: 1.0
-  - NuGet Package Manager: 6.9.1
-  - Visual Studio IntelliCode: 2.2
+    * Version: 17.9.1
+    * VisualStudio.17.Release/17.9.1+34616.47
+    * Microsoft .NET Framework: Version 4.8.09032
+    * Installed Version: Enterprise
+    * C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
+    * Microsoft JVM Debugger: 1.0
+    * NuGet Package Manager: 6.9.1
+    * Visual Studio IntelliCode: 2.2
 * Visual Studio Code (VSC)
-  - Version: 1.85.2 (user setup)
-  - Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
-  - Chromium: 114.0.5735.289
-  - Electron: 25.9.7
-  - ElectronBuildId: 26354273
-  - Node.js: 18.15.0
-  - V8: 11.4.183.29-electron.0
-  - OS: Windows_NT x64 10.0.22621
-  - Sandboxed: Yes
+    * Version: 1.85.2 (user setup)
+    * Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
+    * Chromium: 114.0.5735.289
+    * Electron: 25.9.7
+    * ElectronBuildId: 26354273
+    * Node.js: 18.15.0
+    * V8: 11.4.183.29-electron.0
+    * OS: Windows_NT x64 10.0.22621
+    * Sandboxed: Yes
 * Microsoft SQL Server Management Studio 18
-  - Version: 18.11.1
+    * Version: 18.11.1
 * Chrome (for PDFs und Documentation)
-  - Version 122.0.6261.58 (Official Build) (64-bit)
+    * Version 122.0.6261.58 (Official Build) (64-bit)
 * Visual Paradigm - Version: 17.0
 
 ## Decide
