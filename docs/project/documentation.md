@@ -125,7 +125,7 @@
 
   **Visual Paradigm**
 
-- Version: 17.0
+- Version: 17.1
 
 ## Decide
 
