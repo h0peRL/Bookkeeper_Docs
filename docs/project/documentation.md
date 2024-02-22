@@ -92,7 +92,7 @@
 #### Testenvironment
 
 * Microsoft Visual Studio Enterprise (VS)
-  - Microsoft Visual Studio Enterprise 2022
+    * Microsoft Visual Studio Enterprise 2022
   - Version: 17.9.1
   - VisualStudio.17.Release/17.9.1+34616.47
   - Microsoft .NET Framework: Version 4.8.09032
