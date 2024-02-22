@@ -6,12 +6,11 @@
 
 ### Requirements
 
-
 | **Req. No.** | **Mandatory/Optional** | **Func./Qual./Margin.** | **Requirement**                                                                                |
 | :----------- | ---------------------- | :---------------------- | ---------------------------------------------------------------------------------------------- |
 | 1            | Mandatory              | Functional              | The app supports multiple users at the same time                                               |
 | 2            | Mandatory              | Marginal                | The app is a .NET 8.0 REST-API (LTS)                                                           |
-| 3            | Mandatory              | Functional              | Data will be stored in an SQL-Database                                                         |
+| 3            | Mandatory              | Marginal                | Data will be stored in an SQL-Database                                                         |
 | 4            | Mandatory              | Functional              | The user can register via HTTP-request                                                         |
 | 5            | Mandatory              | Functional              | The user can log in via HTTP-request                                                           |
 | 6            | Mandatory              | Functional              | The user can create booking records via HTTP-request                                           |
@@ -19,18 +18,16 @@
 | 8            | Optional               | Functional              | The software must have an income statement based on the SME chart of accounts                  |
 | 9            | Mandatory              | Functional              | The software must be able to execute booking records while updating the affected accounts      |
 | 10           | Mandatory              | Functional              | A booking record must include the date, booking text, debit account, credit account and amount |
-| 11           | Optional               | Quality                 | Every command should have an explanation of the syntax                                         |
-| 12           | Mandatory              | Functional              | Every endpoint should require a JWT-Bearer-Token (except login and register)                   |
-| 13           | Mandatory              | Marginal                | There must be a UML class diagram.                                                             |
-| 14           | Mandatory              | Marginal                | The program and documentation should be in English                                             |
-| 15           | Mandatory              | Marginal                | There should be a glossary with German translations                                            |
+| 11           | Mandatory              | Functional              | Every endpoint should require a JWT-Bearer-Token (except login and register)                   |
+| 12           | Mandatory              | Marginal                | There must be a UML class diagram.                                                             |
+| 13           | Mandatory              | Marginal                | The program and documentation should be in English                                             |
+| 14           | Mandatory              | Marginal                | There should be a glossary with German translations                                            |
 
 ### Tech Stack
 
 ## Plan
 
 ### Work Packages
-
 
 | Nr. | Due Date   | Description                                                                      | Estimated Time (45 min.) |
 | --- | ---------- | -------------------------------------------------------------------------------- | ------------------------ |
@@ -76,6 +73,59 @@
     **The total amount of lessons should be 105** as every one of the 3 members works 5 lessons per week over the course of 7 weeks.
 
 ### Test Cases
+
+| Testcase<br />Nr. | Req.<br />Nr. | Requirements                                                                                               | Testenvironment                                          | Input/Output                                                                                                            | Predicted Output                                                                                |
+| ----------------- | ------------- | ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------- |
+| 1.1               | 3             | Unittest for multi-user functionality is created.                                                          | VS 2022                                                  | Start the unittest which is used to test the multi-user functionality.                                                  | Unittest is successful.                                                                         |
+| 2.1               | 4             | Backend is up and running, correct API endpoint is used: .../auth/register                                 | Postman, Swagger                                         | name: youruname<br />password: yourpw                                                                                   | HTTP 200 successful. User created                                                               |
+| 3.1               | 5             | Backend is up and running, correct API endpoint is used: .../auth/login                                    | Postman, Swagger                                         | name: youruname<br />password: yourpw                                                                                   | HTTP 200 successful. Logged in.                                                                 |
+| 4.1               | 6             | Backend is up and running, correct API endpoint is used:<br />.../Booking                                  | Postman, Swagger                                         | debit: 1000 credit: 1200 amount: 20                                                                                     | HTTP 200 successful. Booking record created.                                                    |
+| 5.1               | 7             | Have your SME chart ready get the the current balance sheet via: .../BalanceSheet/GetBalanceSheet          | Postman, Chrome, VSC                                     | Compare SME chart balance sheet accounts with response JSON and see if all de accounts are in the SME chart.            | All balance sheet accounts listed in the SME chart of accounts appear in the insert command.    |
+| 6.1               | 8             | Have your SME chart ready and get the current income statement via: .../IncomeStatement/GetIncomestatement | Postman, Chrome, VSC                                     | Compare SME chart for the income statement accounts with response JSON and see if all de accounts are in the SME chart. | All income statement accounts listed in the SME chart of accounts appear in the insert command. |
+| 7.1               | 9             | Starting the application                                                                                   | Postman, Swagger                                         | debit: 1500 credit: 2000 amount: 20                                                                                     | "balance sheet" ->Machines = 20, VLL = 20                                                       |
+| 8.1               | 10            | Connect to DB                                                                                              | SSMS                                                     | SQL Query with SELECT\* FROM Account                                                                                    | The Table should have this structure.![](assets/20240201_112710_image.png)                      |
+| 9.1               | 11            | Starting the application,                                                                                  | Postman                                                  | Post on booking/book JWT                                                                                                | Status Code 401: Unauthorized                                                                   |
+| 10.1              | 12            | Docs open.                                                                                                 | [Docs](https://bookkeper-docs.readthedocs.io/en/latest/) | Look at the UML paragraph.                                                                                              | UML is shown in the docs.                                                                       |
+| 11.1              | 13            | Docs open.                                                                                                 | [Docs](https://bookkeper-docs.readthedocs.io/en/latest/) | Look at the doc language                                                                                                | Language is English                                                                             |
+| 12.1              | 14            | Docs open.                                                                                                 | [Docs](https://bookkeper-docs.readthedocs.io/en/latest/) | Navigate to glossary                                                                                                    | A glossary contains translations and explanations                                               |
+
+#### Testenvironment
+
+**Microsoft Visual Studio Enterprise (VS)**
+
+- Microsoft Visual Studio Enterprise 2022
+- Version: 17.9.1
+- VisualStudio.17.Release/17.9.1+34616.47
+- Microsoft .NET Framework: Version 4.8.09032
+- Installed Version: Enterprise
+- C# Tools: 4.9.0-3.24081.11+989117396f26e5453ff157df610d22ce45b6b0a9
+- Microsoft JVM Debugger: 1.0
+- NuGet Package Manager: 6.9.1
+- Visual Studio IntelliCode: 2.2
+
+  **Visual Studio Code (VSC)**
+
+- Version: 1.85.2 (user setup)
+- Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
+- Chromium: 114.0.5735.289
+- Electron: 25.9.7
+- ElectronBuildId: 26354273
+- Node.js: 18.15.0
+- V8: 11.4.183.29-electron.0
+- OS: Windows_NT x64 10.0.22621
+- Sandboxed: Yes
+
+  **Microsoft SQL Server Management Studio 18**
+
+- Version: 18.11.1
+
+  **Chrome (for PDFs und Documentation)**
+
+- Version 122.0.6261.58 (Official Build) (64-bit)
+
+  **Visual Paradigm**
+
+- Version: 17.1
 
 ## Decide
 
