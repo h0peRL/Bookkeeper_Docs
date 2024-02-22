@@ -91,7 +91,7 @@
 
 #### Testenvironment
 
-- Microsoft Visual Studio Enterprise (VS)
+* Microsoft Visual Studio Enterprise (VS)
   - Microsoft Visual Studio Enterprise 2022
   - Version: 17.9.1
   - VisualStudio.17.Release/17.9.1+34616.47
@@ -101,7 +101,7 @@
   - Microsoft JVM Debugger: 1.0
   - NuGet Package Manager: 6.9.1
   - Visual Studio IntelliCode: 2.2
-- Visual Studio Code (VSC)
+* Visual Studio Code (VSC)
   - Version: 1.85.2 (user setup)
   - Commit: 8b3775030ed1a69b13e4f4c628c612102e30a681
   - Chromium: 114.0.5735.289
@@ -111,11 +111,11 @@
   - V8: 11.4.183.29-electron.0
   - OS: Windows_NT x64 10.0.22621
   - Sandboxed: Yes
-- Microsoft SQL Server Management Studio 18
+* Microsoft SQL Server Management Studio 18
   - Version: 18.11.1
-- Chrome (for PDFs und Documentation)
+* Chrome (for PDFs und Documentation)
   - Version 122.0.6261.58 (Official Build) (64-bit)
-- Visual Paradigm - Version: 17.0
+* Visual Paradigm - Version: 17.0
 
 ## Decide
 
