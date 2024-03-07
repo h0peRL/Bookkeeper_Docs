@@ -180,10 +180,82 @@ We put these measures into place to handle conflicting transactions:
 
 ## Realise
 
+### Achitecture
+
+Before implementing the project, the first step was to work out an architecture for it. All group members had to have the same idea of the things they should implement and how. A UML class diagram seemed like the ideal tool to us for this use case. Below you can find the simplified version of the architecture as a UML class diagram. Please note that it does not represent the code in the code base directly, it simply served as means of orientation when programming.
+
+### Execution Table
+
+![](assets/20240307_102832_image.png)
+
+![](assets/20240307_102912_image.png)
+
+![](assets/20240307_102934_image.png)
+
+### Execution Table
+
+This is the table that shows the actual time it took to fully implement the project.
+
+
+| Nr. | Due Date   | Description                                                                      | Actual Time | Estimated Time (45 min.) |
+| --- | ---------- | -------------------------------------------------------------------------------- | ----------- | ------------------------ |
+| 0   | 25.01.2024 | Create table with work packages                                                  | 2           | 2                        |
+| 1   | 18.01.2024 | Set up documentation                                                             | 5           | 5                        |
+| 2   | 18.01.2024 | Set up project                                                                   | 3           | 3                        |
+| 3   | 18.01.2024 | Set up repositories                                                              | 2           | 2                        |
+| 4   | 18.01.2024 | Define detailed requirements                                                     | 2           | 2                        |
+| 5   | 01.02.2024 | Set up shared (prod.) DB (with users)                                            | 5           | 7                        |
+| 6   | 25.01.2024 | Research Technologies                                                            | 5           | 5                        |
+| 7   | 25.01.2024 | Create detailed MVC class diagram in VP                                          | 20          | 15                       |
+| 8   | 25.01.2024 | Decide about technologies to use                                                 | 3           | 3                        |
+| 9   | 25.01.2024 | Set up test DB (with users)                                                      | 5           | 5                        |
+| 10  | 25.01.2024 | Set up linter and styling rules                                                  | 3           | 3                        |
+| 11  | 01.02.2024 | Set up CI pipelines                                                              | 3           | 5                        |
+| 12  | 01.02.2024 | Set up pre-commits                                                               | 3           | 3                        |
+| 13  | 01.02.2024 | Write test cases for every requirement with test env. definition (documentation) | 12          | 8                        |
+| 14  | 01.02.2024 | Write unittests from test cases (for model only!)                                | 7           | 6                        |
+| 15  | 25.01.2024 | Integrate EF as ORM with DB                                                      | 5           | 5                        |
+| 16  | 25.01.2024 | Create class and method bodies from class diagram                                | 2           | 2                        |
+| 17  | 22.02.2024 | Implement registration endpoint                                                  | 2           | 2                        |
+| 18  | 22.02.2024 | Implement login endpoint and authorization                                       | 3           | 4                        |
+| 19  | 22.02.2024 | Implement booking record (request) creation with a queue                         | 5           | 2                        |
+| 20  | 22.02.2024 | Implement balance sheet generation                                               | 3           | 3                        |
+| 21  | 22.02.2024 | Implement income statement generation                                            | 3           | 3                        |
+| 22  | 29.02.2024 | Implement pending record request processing                                      | 4           | 5                        |
+| 23  | 29.02.2024 | Run tests and create protocol with a conclusion of the run                       | 3           | 2                        |
+| 24  | 29.02.2024 | Evaluate results of the project (as a group)                                     | 2           | 3                        |
+| -   | -          | Total estimated time effort in lessons:                                          | **112**     | **105**                  |
+
+Some of the tasks took longer to implement than thought. The additional time was accounted for voluntarily outside of school hours.
+
 ## Control
 
 ### Test Protocol
 
+
+| Test-Nr. | Note                                                                                                                                                   | Result | Date       | Signature    |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---------- | ------------ |
+| 1.1      | No tests with for multiuser functionality                                                                                                              | NOK    | 07.03.2024 | Marton Naray |
+| 2.1      |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 3.1      |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 4.1      | AppDbContext can't inject reference to EFDataRepository into new accounts from db. This causes a null reference to the DataRepository in the Accounts. | NOK    | 07.03.2024 | Marton Naray |
+| 5.1      | AppDbContext can't inject reference to EFDataRepository into new accounts from db. This causes a null reference to the DataRepository in the Accounts. | NOK    | 07.03.2024 | Marton Naray |
+| 6.1      | AppDbContext can't inject reference to EFDataRepository into new accounts from db. This causes a null reference to the DataRepository in the Accounts. | NOK    | 07.03.2024 | Marton Naray |
+| 7.1      |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 8.1      |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 9.1      |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 10.1     |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 11.1     |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+| 12.1     |                                                                                                                                                        | OK     | 07.03.2024 | Marton Naray |
+
 ### Conclusion
 
+The Unittests are passing, however the Endpoints are not in a usable state as of the this test run. The issue is known and mentioned in the notes of the tests regarding it. This affects the overall quality of the product. It could not be shipped before patching if there was a real client.
+
 ## Evaluate
+
+The project went smoothly, especially the planning phase. Some issues came up along the way, yet we managed to take care of most of them. A mistake in our code was found during the testing phase, by when it was already too late to correct it. If there was another iteration, it could be fixed, however.
+
+The flow of work and communication was seemingly flawless as well, due to the usage of previous experiences we made as a team in former projects. Said projects often had issues concerning these aspects.
+
+Overall the team agrees on this project being a success. Different concepts and techniques could be passed between the members, as everyone was able to learn something.
